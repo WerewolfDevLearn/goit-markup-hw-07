@@ -91,13 +91,13 @@ body {
   display: block;
 }
 
-.logo-header {
+.header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
 }
 
-.logo-footer {
+.footer__logo {
   padding-bottom: 20px;
 }
 
@@ -119,8 +119,7 @@ body {
 }
 
 .user-nav__list,
-.hdr__contacts-list,
-.footer-contact-list,
+.contacts-list,
 .features-list,
 .collection,
 .team__list,
