@@ -89,15 +89,14 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
 }
 
-.footer__logo {
+.ftr__logo {
   padding-bottom: 20px;
 }
 
@@ -113,13 +112,17 @@ body {
   color: var(--color-white);
 }
 
+.logo--margin {
+  margin-right: 93px;
+}
+
 .logo:focus,
 .logo:hover {
   outline: none;
 }
 
-.user-nav__list,
-.contacts-list,
+.menu,
+.contacts,
 .features-list,
 .collection,
 .team__list,
@@ -129,19 +132,19 @@ body {
   list-style: none;
 }
 /* HEADER */
-.user-nav__list {
+.menu {
   display: flex;
 }
 
-.user-nav__item {
+.menu__item {
   margin-right: 50px;
 }
 
-.user-nav__item:last-child {
+.menu__item:last-child {
   margin-right: 0px;
 }
 
-.user-nav__link {
+.menu__link {
   position: relative;
   color: inherit;
   font-weight: 500;
@@ -154,11 +157,11 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-nav__link--current {
+.menu__link--current {
   color: var(--accent-color);
 }
 
-.user-nav__link--current::after {
+.menu__link--current::after {
   content: '';
   display: block;
   position: absolute;
@@ -170,20 +173,20 @@ body {
   background-color: var(--accent-color);
 }
 
-.contacts-list {
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.contacts-list__item {
+.contacts__item {
   margin-right: 50px;
 }
 
-.contacts-list__item:last-child {
+.contacts__item:last-child {
   margin-right: 0px;
 }
 
-.contacts-list__link {
+.contacts__link {
   color: var(--secondary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -196,15 +199,15 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-list__icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contacts-list__link:hover,
-.contacts-list__link:focus,
-.user-nav__link:hover,
-.user-nav__link:focus {
+.contacts__link:hover,
+.contacts__link:focus,
+.menu__link:hover,
+.menu__link:focus {
   color: var(--accent-color);
   outline: none;
 }
@@ -267,16 +270,18 @@ body {
   background-color: var(--accent-button-color);
 }
 
-.features-list {
+.features__list {
   display: flex;
 }
 
-.features-list__item {
+.features__item {
   flex-basis: 270px;
+}
+.feature {
   margin-right: 30px;
 }
 
-.features-list__item:last-child {
+.feature:last-child {
   margin-right: 0px;
 }
 
@@ -361,14 +366,14 @@ body {
   display: flex;
 }
 
-.team__list-item {
+.teammate {
   background-color: var(--color-white);
   margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team__list-item:last-child {
+.teammate:last-child {
   margin-right: 0px;
 }
 
@@ -396,10 +401,6 @@ body {
 }
 
 .social-networks {
-  margin-right: 93px;
-}
-
-.social-networks__list {
   display: flex;
   justify-content: center;
 }
@@ -454,15 +455,15 @@ body {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
 }
 
-.clients-list__item {
+.clients__item {
   margin-right: 30px;
 }
 
-.clients-list__item:last-child {
+.clients__item:last-child {
   margin-right: 0px;
 }
 
@@ -625,7 +626,7 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-contacts {
+.contacts-container {
   margin-right: 70px;
 }
 
@@ -658,8 +659,12 @@ body {
   color: var(--color-white);
 }
 
-.social-networks__heading,
-.email-subscribe-form__heading {
+.socials {
+  margin-right: 93px;
+}
+
+.socials__heading,
+.subscribe-form__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -669,11 +674,11 @@ body {
   margin-bottom: 20px;
 }
 
-.email-subscribe-form__heading {
+.subscribe-form__heading {
   display: block;
 }
 
-.email-subscribe-form__btn {
+.subscribe-form__btn {
   display: inline-flex;
   align-items: center;
   background-color: var(--accent-color);
@@ -696,17 +701,17 @@ body {
   width: 200px;
 }
 
-.email-subscribe-form__btn:hover,
-.email-subscribe-form__btn:focus {
+.subscribe-form__btn:hover,
+.subscribe-form__btn:focus {
   background-color: var(--accent-button-color);
 }
 
-.email-subscribe-form__icon {
+.subscribe-form__icon {
   fill: currentColor;
   margin-left: 10px;
 }
 
-.email-subscribe-form__input {
+.subscribe-form__input {
   width: 358px;
   height: 50px;
   padding-top: 15px;
@@ -725,8 +730,8 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.email-subscribe-form__input:focus,
-.email-subscribe-form__input:hover {
+.subscribe-form__input:focus,
+.subscribe-form__input:hover {
   outline: 1px solid rgba(255, 255, 255, 0.3);
 }
 
