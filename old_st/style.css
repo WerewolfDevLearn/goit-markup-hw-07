@@ -26,6 +26,7 @@
   --modal-field-heading-font-size: 12px;
   --modal-field-border-color: rgba(33, 33, 33, 0.2);
 }
+
 html {
   box-sizing: border-box;
 }
@@ -91,9 +92,6 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
-}
-
-.header__logo {
 }
 
 .ftr__logo {

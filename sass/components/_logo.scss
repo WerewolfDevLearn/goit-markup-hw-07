@@ -1,0 +1,36 @@
+.logo {
+  font-family: var(--logo-font);
+  font-size: var(--logo-font-size);
+  line-height: 1.19;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.ftr__logo {
+  padding-bottom: 20px;
+}
+
+.logo--accent {
+  color: $accent-color;
+}
+
+.logo--black {
+  color: $color-black;
+}
+
+.logo--white {
+  color: $color-white;
+}
+
+.logo--margin {
+  margin-right: 93px;
+}
+
+.logo:focus,
+.logo:hover {
+  outline: none;
+}
