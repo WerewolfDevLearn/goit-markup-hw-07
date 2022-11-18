@@ -482,8 +482,8 @@ body {
 }
 
 .logo {
-  font-family: var(--logo-font);
-  font-size: var(--logo-font-size);
+  font-family: Raleway, san-serif;
+  font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -519,7 +519,7 @@ body {
 }
 
 .hdr {
-  border-bottom: 1px solid var(--header-line-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .menu {
