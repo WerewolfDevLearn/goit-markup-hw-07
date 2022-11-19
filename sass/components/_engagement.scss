@@ -18,10 +18,9 @@
 .collection__item {
   margin-right: 30px;
   position: relative;
-}
-
-.collection__item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .collection__signature {

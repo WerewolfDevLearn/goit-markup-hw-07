@@ -7,10 +7,9 @@
 }
 .feature {
   margin-right: 30px;
-}
-
-.feature:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .feature__decoration {

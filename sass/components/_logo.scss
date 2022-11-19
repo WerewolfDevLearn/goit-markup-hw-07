@@ -8,6 +8,10 @@
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
+  &:focus,
+  &:hover {
+    outline: none;
+  }
 }
 
 .ftr__logo {
@@ -28,9 +32,4 @@
 
 .logo--margin {
   margin-right: 93px;
-}
-
-.logo:focus,
-.logo:hover {
-  outline: none;
 }
